@@ -949,8 +949,11 @@ nav a:hover {
 }
 
 .pricinc-card ul li::before {
-  content: "✔️";
+  content: "✓";
   margin-right: 20px;
+  color: green;
+  font-style: bold;
+  font-size: 1.2rem;
 }
 
 .pricinc-card button {
@@ -1360,11 +1363,13 @@ footer .container {
   .card {
     max-width: 70%;
     width: 50%;
-    margin-left: 28%;
+    margin-left: 12%;
   }
 
   .card h3 {
     margin-top: 60px;
+    font-size: 25px;
+    margin-top: 10px;
   }
 
   .gallery .product .item-box {
@@ -1373,16 +1378,15 @@ footer .container {
   }
 
   .pricinc h2 {
-    left: 150px;
+    left: 210px;
   }
   .Asced h2 {
-    left: -20px;
+    left: 40px;
   }
   .portfolio .gallery .product .item-box:hover .bix-img {
     transform: translateY(175px);
   }
-  .portfolio,
-  .gallery,
+
   .item-box,
   .about,
   .skills,
@@ -1398,11 +1402,17 @@ footer .container {
   .Asced,
   .join-our,
   .card-flex,
-  .pricinc,
-  .card-flex,
   .pricinc-card,
   .menu,
   .footer {
+    animation: apper2 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 10%;
+  }
+
+  .portfolio,
+  .gallery,
+  .pricinc {
     animation: apper2 linear;
     animation-timeline: view();
     animation-range: entry 0% cover 10%;
@@ -1412,8 +1422,6 @@ footer .container {
   .card-flex,
   .card.item-box,
   .why-image,
-  .accordion-item,
-  .accordion-toggle,
   .skills-image,
   .call-to-buttom,
   .call-to-title {
@@ -1446,6 +1454,9 @@ footer .container {
       opacity: 1;
       transform: translateY(0px);
     }
+  }
+  .contact-form {
+    width: 80%;
   }
 }
 
@@ -1534,18 +1545,18 @@ footer .container {
   .card-flex {
     justify-content: center;
     gap: 30px;
-    padding: 40px 20px;
+    padding: 20px 20px;
     flex-wrap: wrap;
     display: flex;
     flex-direction: row;
-    right: 5%;
+    margin: auto;
   }
 
   .card {
     flex: 0 1 250px;
     max-width: 250px;
     margin: 0 auto;
-    width: 100%;
+    width: 80%;
   }
 
   .team .container {
@@ -1695,8 +1706,7 @@ footer .container {
     
     
   } */
-.portfolio,
-.gallery,
+
 .item-box,
 .about,
 .skills,
@@ -1711,8 +1721,6 @@ footer .container {
 .about-content .pricinc,
 .Asced,
 .join-our,
-.card-flex,
-.pricinc,
 .card-flex,
 .pricinc-card,
 .menu,
