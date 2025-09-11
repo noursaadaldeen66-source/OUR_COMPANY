@@ -1377,10 +1377,10 @@ footer .container {
   }
 
   .pricinc h2 {
-    left: 210px;
+    left: 38%;
   }
   .Asced h2 {
-    left: 40px;
+    left: 10%;
   }
   .portfolio .gallery .product .item-box:hover .bix-img {
     transform: translateY(175px);
@@ -1817,6 +1817,8 @@ footer .container {
 .menu,
 .skills-text,
 .secskills,
+.pricinc-des,
+.pricinc,
 .footer {
   animation: apper2 linear;
   animation-timeline: view();
@@ -1824,13 +1826,17 @@ footer .container {
 }
 
 .portfolio,
-.gallery,
+.gallery {
+  animation: apper2 linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 10%;
+}
+
 .pricinc {
   animation: apper2 linear;
   animation-timeline: view();
-  animation-range: entry 0% cover 30%;
+  animation-range: entry 0% cover 20%;
 }
-
 .services-text,
 .card-flex,
 .card.item-box,
