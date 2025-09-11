@@ -417,6 +417,7 @@ nav a:hover {
   flex: 1;
   text-align: left;
   max-width: 90%;
+  margin-left: 8%;
 }
 
 .skills-text p {
@@ -518,12 +519,10 @@ nav a:hover {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 10px;
+  gap: 20px;
   padding: 20px 0;
-  width: 200%;
-  max-width: 1400px;
-  height: auto;
-  margin-left: -280px;
+  width: 100%;
+  max-width: 100%;
   animation: fadeIn 1s ease-in forwards;
 }
 
@@ -953,7 +952,7 @@ nav a:hover {
   margin-right: 20px;
   color: green;
   font-style: bold;
-  font-size: 1.2rem;
+  font-size: 20px;
 }
 
 .pricinc-card button {
@@ -1534,29 +1533,32 @@ footer .container {
   }
 
   .services .container {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-around;
   }
 
   .services-text {
-    max-width: 50%;
+    max-width: 100%;
   }
 
   .card-flex {
-    justify-content: center;
-    gap: 30px;
-    padding: 20px 20px;
-    flex-wrap: wrap;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 20px 20px;
+
+    flex-wrap: wrap;
+    width: 1200px;
     margin: auto;
   }
 
   .card {
-    flex: 0 1 250px;
-    max-width: 250px;
-    margin: 0 auto;
-    width: 80%;
+    flex: 1 1 1 1 320px;
+    max-width: 320px;
+    margin: auto auto;
+    width: 100%;
   }
 
   .team .container {
@@ -1793,5 +1795,76 @@ footer .container {
   }
   75% {
     transform: translateY(+15px);
+  }
+}
+
+.item-box,
+.about,
+.skills,
+.clients .logo,
+.why,
+.services,
+.why-image,
+.team,
+.contact,
+.skills-text,
+.about-text,
+.about-content .pricinc,
+.Asced,
+.join-our,
+.card-flex,
+.pricinc-card,
+.menu,
+.skills-text,
+.secskills,
+.footer {
+  animation: apper2 linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+
+.portfolio,
+.gallery,
+.pricinc {
+  animation: apper2 linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+
+.services-text,
+.card-flex,
+.card.item-box,
+.why-image,
+.skills-image,
+.call-to-buttom,
+.call-to-title {
+  animation: zoomIn ease-out;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+@keyframes apper2 {
+  from {
+    opacity: 0;
+
+    animation: fadeIn 0.5s ease-in forwards;
+    animation-delay: 0.25s;
+    transform: translateY(+100px);
+  }
+  25% {
+    opacity: 0.5;
+    animation: fadeIn 0.5s ease-in forwards;
+    animation-delay: 0.5s;
+    transform: translateY(75px);
+  }
+  75% {
+    opacity: 0.5;
+
+    animation: fadeIn 0.5s ease-in forwards;
+    animation-delay: 0.75s;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
   }
 }
