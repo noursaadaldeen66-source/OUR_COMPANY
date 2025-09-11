@@ -601,6 +601,7 @@ nav a:hover {
   animation: autoShow;
   animation-timeline: view(50% auto);
   animation: fadeIn 1s ease-in forwards;
+  animation: zoomIn ease-out;
 }
 
 .call-to-title .para {
@@ -616,6 +617,7 @@ nav a:hover {
 .call-to-buttom {
   animation: autoShow;
   animation-timeline: view(50% auto);
+  animation: zoomIn ease-out;
 }
 
 .call-to-buttom button {
@@ -1280,7 +1282,7 @@ footer .container {
 }
 
 /* Animations */
-@keyframes fadeIn {
+/* @keyframes fadeIn {
   from {
     opacity: 0;
     transform: translateY(20px);
@@ -1291,7 +1293,7 @@ footer .container {
     transform: translateY(0);
     scale: 1;
   }
-}
+} */
 
 @keyframes zoomIn {
   from {
@@ -1304,7 +1306,7 @@ footer .container {
   }
 }
 
-@keyframes apper2 {
+/* @keyframes apper2 {
   from {
     opacity: 0;
     transform: translateY(100px);
@@ -1313,7 +1315,7 @@ footer .container {
     opacity: 1;
     transform: translateY(0);
   }
-}
+} */
 
 @keyframes beat {
   0%,
@@ -1358,7 +1360,7 @@ footer .container {
   .card {
     max-width: 70%;
     width: 50%;
-    padding: 10px;
+    margin-left: 28%;
   }
 
   .card h3 {
@@ -1370,8 +1372,80 @@ footer .container {
     height: 250px;
   }
 
+  .pricinc h2 {
+    left: 150px;
+  }
+  .Asced h2 {
+    left: -20px;
+  }
   .portfolio .gallery .product .item-box:hover .bix-img {
     transform: translateY(175px);
+  }
+  .portfolio,
+  .gallery,
+  .item-box,
+  .about,
+  .skills,
+  .clients .logo,
+  .why,
+  .services,
+  .why-image,
+  .team,
+  .contact,
+  .skills-text,
+  .about-text,
+  .about-content .pricinc,
+  .Asced,
+  .join-our,
+  .card-flex,
+  .pricinc,
+  .card-flex,
+  .pricinc-card,
+  .menu,
+  .footer {
+    animation: apper2 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 10%;
+  }
+
+  .services-text,
+  .card-flex,
+  .card.item-box,
+  .why-image,
+  .accordion-item,
+  .accordion-toggle,
+  .skills-image,
+  .call-to-buttom,
+  .call-to-title {
+    animation: zoomIn ease-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 10%;
+  }
+  @keyframes apper2 {
+    from {
+      opacity: 0;
+
+      animation: fadeIn 0.5s ease-in forwards;
+      animation-delay: 0.25s;
+      transform: translateY(+100px);
+    }
+    25% {
+      opacity: 0.5;
+      animation: fadeIn 0.5s ease-in forwards;
+      animation-delay: 0.5s;
+      transform: translateY(75px);
+    }
+    75% {
+      opacity: 0.5;
+
+      animation: fadeIn 0.5s ease-in forwards;
+      animation-delay: 0.75s;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0px);
+    }
   }
 }
 
@@ -1637,7 +1711,6 @@ footer .container {
 .about-content .pricinc,
 .Asced,
 .join-our,
-.call-to,
 .card-flex,
 .pricinc,
 .card-flex,
@@ -1653,9 +1726,10 @@ footer .container {
 .card-flex,
 .card.item-box,
 .why-image,
-.accordion-item,
-.accordion-toggle,
-.skills-image {
+.menu-item,
+.skills-image,
+.call-to-buttom,
+.call-to-title {
   animation: zoomIn ease-out;
   animation-timeline: view();
   animation-range: entry 0% cover 30%;
